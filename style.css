@@ -1,0 +1,68 @@
+
+/*Override default black outline in Chrome*/
+*,*:focus,*:hover{
+    outline:none;
+}
+
+form {
+    /*Center the form on the page*/
+    margin: 0 auto;
+    width: 400px;
+    /*Form outline*/
+    padding: 1em;
+    border: 1px solid burlywood;
+    border-radius: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+label {
+    /*Uniform size and alignment*/
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+     /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+     font: 1em sans-serif;
+
+     /*Uniform text field size*/
+     width: 300px;
+     box-sizing: border-box;
+
+     /*Match form field borders*/
+     border: 1px solid burlywood;
+}
+
+input:focus,
+textarea:focus {
+    /*Additional highlight for focused elements*/
+    background-color: ivory;
+    border-color: cadetblue;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+}
+
+.button {
+    /*Align buttons with the text fields*/
+    padding-left: 90px;
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
